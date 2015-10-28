@@ -1,0 +1,157 @@
+/* ~~~~ MAIN STYLES ~~~~ */
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #eee;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  line-height: 1.5rem;
+  }
+
+.mainwrap {
+    max-width: 60%;
+    min-width: 300px;
+    margin: 0 auto;
+    outline: 0px  solid red;
+    padding: 10px;
+  }
+
+h1, h2, h3 {
+  font-family: 'Orbitron', 'Arial Black', sans-serif;
+}
+
+h4, h5, h6 {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 800;
+}
+
+h2 {
+  margin-top: 2em;
+  color: #001f5c;
+  font-size: 2em;
+}
+
+h4 {
+  margin-top: 2.5em;
+}
+
+.bigtext {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.4em;
+}
+
+
+/* ~~~~ HOME PAGE ~~~~ */
+
+body {
+  height: 100vh;
+  background-image: url('../images/landscapewide.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* ~~~~ HEADER ~~~~ */
+
+.spaceship {
+  width: 11em;
+  float: right;
+  position: absolute;
+  top: 3em;
+  right: 5em;
+  z-index: 10;
+  float: right;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  background-image: url('../images/stars.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 25em;
+  width: 100%;
+  border-bottom: 1em solid #ff4747;
+}
+
+.header {
+  margin: 0;
+  text-align: center;
+  color: #ddd;
+  line-height: 1.2em;
+  /* text-shadow: 0 0 0.5em #000; */
+}
+
+p.header {
+  padding: 4em 0 0 0;
+  font-family: 'Orbitron', 'Arial Black', sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+h1.header {
+  margin: auto;
+  padding: 0;
+  font-family: 'Orbitron', 'Arial Black', sans-serif;
+  font-weight: 900;
+  font-size: 6em;
+  background: linear-gradient(180deg, #fff 0%, #fff 20%, #333 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+/* ~~~~ SECTION 1 ~~~~ */
+
+.social {
+  margin: 2.5em 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+.social > li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0.75em;
+}
+
+
+
+/* ~~~~ SECTION 2 ~~~~ */
+
+.imgwrap {
+  float: right;
+}
+
+.biophoto {
+  margin: 1em 1em 0 1em;
+  padding: 0;
+  width: 15em;
+  border: 3px solid #ff4747;
+  border-radius: 50%;
+}
+
+.imgcred {
+  margin: -0.75em 1em 1em 1em;
+  padding: 0;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.6em;
+}
+
+
+
+/* ~~~~ FOOTER ~~~~ */
+
+footer {
+  padding: 2em 3em;
+  margin: 3em 0 0 0;
+  background-color: #ff4747;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75em;
+  color: #333;
+}
