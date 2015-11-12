@@ -1,138 +1,209 @@
-/* ~~~~ LAYOUT ~~~~ */
+/* ~~~~ MOBILE FIRST: SITE STYLES and LAYOUT ~~~~ */
+
+html {
+  background-color: #22170b;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 10px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 5px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 10px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 10px),
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 10px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 10px);
+  background-repeat: repeat, repeat, repeat, repeat, repeat, repeat;
+  background-attachment: fixed, fixed, fixed, fixed, fixed, fixed, fixed;
+  background-size: 550px 550px, 350px 350px, 470px 470px, 250px 250px, 450px 450px, 400px 400px; 
+  background-position: 0 0, 40px 60px, -160px 310px, 10px 150px, 450px 150px, 80px -70px;
+}
 
 body {
-  padding: 0;
   margin: 0;
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: url('../images/stars.jpg') no-repeat center center fixed;
-  background-color: #eee;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 0;
   color: #fff;
   font-family: 'Raleway', 'Arial', sans-serif;
-  line-height: 1.5rem;
-  }
-
-.top_bar {  
-  position: fixed; top: 0;
-  left: 0; right: 0;
-  background-color: rgba(255,255,255,.3);
-  height: 50px;
+  line-height: 1.5rem; 
 }
-
-
-main {
-  margin: 5em auto 0;
-  width: 50em;
-  text-align: 
-}
-
 
 .spaceship {
-  background-image: url('../images/spaceship.png');
-  background-size: 100%;
-  position: absolute;
-  bottom: 0;
-  top: 15%;
-  left: 10%;
-
-  width: 10em;
-  float: left;
-  overflow: hidden;
+  display: none;
 }
 
-
-.content {
-  margin: 0;
-  margin-left: 2em;
-  padding: 2em;
-  background-color: rgba(3, 4, 22, 0.9);
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 30em;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-
-
-
-/* ~~~~ MAIN STYLES ~~~~ */
-
-h1, h2, h3 {
-  font-family: 'Orbitron', 'Arial Black', sans-serif;
-  font-weight: 400;
-}
-
-h4, h5, h6 {
-  font-family: 'Raleway', 'Arial', sans-serif;
-  font-weight: 800;
-}
-
-h2 {
-  margin-top: 2em;
-  color: #001f5c;
-  font-size: 2em;
-}
-
-h4 {
-  margin-top: 2.5em;
-}
-
-
-
-
-
-
-
-/* ~~~~ HOMEPAGE CONTENT STYLES ~~~~ */
-
-h1.header {
+.spaceship2 {
   margin: 0 auto;
-  padding: 0;
-  text-align: left;
-  color: #ddd;
-  line-height: 1.2em;
+  width: 150px;
+}
+
+a, a:link, a:visited {
+  color: #cc5200;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff7920;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+  .mars {
+    display: none;
+  }
+
+
+
+/* ~~~~ HEADER ~~~~ */
+
+.headerwrap {
+  margin: 3em auto;
+  width: 96%;
+  text-align: center;
+}
+
+.smallhead, .bighead {
+  color: #fff;
   font-family: 'Orbitron', 'Arial Black', sans-serif;
+}
+
+.smallhead {
+  margin: 0 0 0.5em;
+  font-size: 1.5em;
+}
+
+.bighead {
+  margin: 0 0 1.2rem 0;
+  padding: 0;
+  font-size: 3.5em;
   font-weight: 900;
-  font-size: 4em;
+  line-height: 1.2em;
   background: linear-gradient(180deg, #fff 0%, #fff 20%, #333 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.bigtext {
-  margin: 0;
-  padding: 0;
-  font-family: 'Raleway', 'Arial', sans-serif;
-  font-size: 1.2em;
+
+
+
+/* ~~~~ MAIN / NAVIGATION / FOOTER ~~~~ */
+
+main, nav, footer {
+  width: 86%;
+  background-color: #24486c;
+  box-sizing: border-box;
+  border-radius: 13px;
+}
+
+main {
+  margin: 0 auto;
+  padding: 25px;
+  font-size: 0.9em;
   line-height: 1.4em;
 }
 
-ul.social {
-  margin-right: 4em;
+.social {
+  margin: 1.3em 0 -1.3em;
+  padding: 0;
+  text-align: justify;
   list-style-type: none;
-  text-align: right;
 }
 
-ul.social > li {
-  margin: 0;
-  padding-left: 0.5em;
+.social li {
+  padding: 0 0.2em;
   display: inline-block;
 }
 
+.social li:last-child {
+  width: 100%;
+  height: 1px;
+}
 
+nav {
+  margin: 1em auto;
+  padding: 15px 25px;
+  font-family: 'Orbitron', 'Arial Black', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  vertical-align: center;
+}
 
-/* ~~~~ FOOTER ~~~~ */
+.navlinks {
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks li {
+  margin: 0;
+  padding: 1em 0;
+  list-style-type: none;
+}
+
+nav img {
+  padding-right: 15px;
+  width: 50px;
+  vertical-align: middle;
+}
 
 footer {
-  padding: 2em 3em;
-  margin: 3em 0 0 0;
-  background-color: #ff4747;
-  width: 100%;
+  margin: 0 auto 2.5rem;
+  padding: 25px;
+  color: #bbb;
+  font-size: 0.7em;
   text-align: center;
-  font-size: 0.75em;
-  color: #333;
 }
+
+
+
+
+
+/* Media Queries */
+
+
+/* 500px */
+
+@media only screen and (min-width: 500px) {
+  
+  html {
+    background-color: #22170B;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 10px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 5px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 10px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 10px),
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 10px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 10px);
+    background-repeat: repeat, repeat, repeat, repeat, repeat, repeat;
+    background-attachment: fixed, fixed, fixed, fixed, fixed, fixed, fixed;
+    background-size: 550px 550px, 350px 350px, 470px 470px, 250px 250px, 450px 450px, 400px 400px; 
+    background-position: 0 0, 40px 60px, -160px 310px, 10px 150px, 450px 150px, 80px -70px;
+  }
+
+
+/*  body {
+    background-image: url('../images/mars.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 350px;
+    background-position: right bottom;
+  }*/
+
+  .mars {
+    display: inline;
+    width: 350px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+
+
+
+}
+
+
+
+
+
+
