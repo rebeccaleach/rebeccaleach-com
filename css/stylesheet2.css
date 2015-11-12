@@ -92,16 +92,16 @@ main, nav, footer {
 
 main {
   margin: 0 auto;
-  padding: 40px;
-  font-size: 1.3em;
+  padding: 25px;
+  font-size: 0.9em;
   line-height: 1.4em;
 }
 
 nav {
   margin: 1em auto;
-  padding: 20px 40px;
+  padding: 15px 25px;
   font-family: 'Orbitron', 'Arial Black', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   letter-spacing: 2px;
   vertical-align: center;
 }
@@ -118,14 +118,14 @@ nav {
 }
 
 nav img {
-  padding-right: 25px;
-  width: 60px;
+  padding-right: 15px;
+  width: 50px;
   vertical-align: middle;
 }
 
 footer {
   margin: 0 auto 2.5rem;
-  padding: 40px;
+  padding: 25px;
   color: #bbb;
   font-size: 0.7em;
   text-align: center;
