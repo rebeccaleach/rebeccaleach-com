@@ -1,4 +1,4 @@
-/* ~~~~ MOBILE FIRST: SITE STYLES and LAYOUT ~~~~ */
+/* ~~~~ SITE STYLES and LAYOUT ~~~~ */
 
 html {
   background-color: #22170b;
@@ -44,7 +44,7 @@ a:hover {
   text-decoration: none;
 }
 
-p {
+.intro {
   margin: 0;
 }
 
@@ -58,7 +58,7 @@ p {
 
 .headerwrap {
   margin: 3em auto;
-  width: 96%;
+  width: 86%;
   text-align: center;
 }
 
@@ -73,7 +73,7 @@ p {
 }
 
 .bighead {
-  margin: 0 0 1.2rem 0;
+  margin: 0 0 0.5em 0;
   padding: 0;
   font-size: 3.5em;
   font-weight: 900;
@@ -163,6 +163,8 @@ footer {
 /* 500px */
 
 @media only screen and (min-width: 500px) {
+
+  /* ~~~~ SITE STYLES and LAYOUT ~~~~ */
   
   html {
     background-color: #22170B;
@@ -179,22 +181,88 @@ footer {
     background-position: 0 0, 40px 60px, -160px 310px, 10px 150px, 450px 150px, 80px -70px;
   }
 
+  .spaceshipwrap {
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
 
-/*  body {
-    background-image: url('../images/mars.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 350px;
-    background-position: right bottom;
-  }*/
+  .spaceshipwrap2 {
+    margin: 0 auto;
+    width: 75%;
+    text-align: right;
+  }
+
+  .spaceship {
+    margin: 1.5em -50px 0 0;
+    width: 30%;
+    max-width: 150px;
+    display: inline;
+  }
+
+  .spaceship2 {
+    display: none;
+  }
 
   .mars {
     display: inline;
     width: 350px;
     position: fixed;
     bottom: 0;
-    right: 0;
+    left: 0;
     z-index: -1;
+    transform: scaleX(-1);
+  }
+
+
+
+  /* ~~~~ HEADER ~~~~ */
+
+  .headerwrap {
+    width: 75%;
+    text-align: left;
+  }
+
+  .smallhead {
+    margin: 0 0 0.5em;
+    font-size: 1.5em;
+  }
+
+  .bighead {
+    margin: 0 0 0.5em 0;
+    padding: 0;
+    font-size: 3.5em;
+    font-weight: 900;
+    line-height: 1.2em;
+    background: linear-gradient(180deg, #fff 0%, #fff 20%, #333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+
+  /* ~~~~ MAIN / NAVIGATION / FOOTER ~~~~ */
+
+  main, nav, footer {
+    width: 75%;
+  }
+
+  main {
+    margin: 0 auto;
+    padding: 25px 90px 25px 25px;
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+
+  .social {
+    text-align: left;
+  }
+
+  .social li {
+    padding: 0 0.7em 0 0;
   }
 
 
