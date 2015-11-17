@@ -1,7 +1,7 @@
 /* ~~~~ SITE STYLES and LAYOUT ~~~~ */
 
 html {
-  background-color: #22170b;
+  background-color: #1a1a1a;
   background-image:
   radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 10px),
   radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 5px),
@@ -33,15 +33,21 @@ body {
 }
 
 a, a:link, a:visited {
-  color: #cc5200;
+  color: #79a6d2;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+
+a:hover {
+  color: #b3cce5;
   font-weight: bold;
   text-decoration: none;
 }
 
-a:hover {
-  color: #ff7920;
-  font-weight: bold;
-  text-decoration: none;
+
+nav a, nav a:link, nav a:visited, nav a:hover {
+  display: block;
 }
 
 .intro {
@@ -59,6 +65,7 @@ a:hover {
 .headerwrap {
   margin: 3em auto;
   width: 86%;
+  max-width: 800px;
   text-align: center;
 }
 
@@ -90,9 +97,10 @@ a:hover {
 
 main, nav, footer {
   width: 86%;
-  background-color: #24486c;
+  max-width: 800px;
+  background-color: #4d4d4d;
   box-sizing: border-box;
-  border-radius: 13px;
+  
 }
 
 main {
@@ -167,7 +175,7 @@ footer {
   /* ~~~~ SITE STYLES and LAYOUT ~~~~ */
   
   html {
-    background-color: #22170B;
+    background-color: #1a1a1a;
     background-image:
     radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 10px),
     radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 5px),
@@ -193,6 +201,7 @@ footer {
   .spaceshipwrap2 {
     margin: 0 auto;
     width: 75%;
+    max-width: 800px;
     text-align: right;
   }
 
@@ -252,7 +261,7 @@ footer {
 
   main {
     margin: 0 auto;
-    padding: 25px 90px 25px 25px;
+    padding: 25px 100px 25px 25px;
     font-size: 1em;
     line-height: 1.4em;
   }
@@ -264,8 +273,6 @@ footer {
   .social li {
     padding: 0 0.7em 0 0;
   }
-
-
 
 
 }
