@@ -45,18 +45,17 @@ a:hover {
   text-decoration: none;
 }
 
-
-nav a, nav a:link, nav a:visited, nav a:hover {
-  display: block;
-}
-
 .intro {
   margin: 0;
 }
 
-  .mars {
-    display: none;
-  }
+.mars {
+  display: none;
+}
+
+.astronaut {
+  display: none;
+}
 
 
 
@@ -95,7 +94,7 @@ nav a, nav a:link, nav a:visited, nav a:hover {
 
 /* ~~~~ MAIN / NAVIGATION / FOOTER ~~~~ */
 
-main, nav, footer {
+nav, footer {
   width: 86%;
   max-width: 800px;
   background-color: #4d4d4d;
@@ -105,7 +104,14 @@ main, nav, footer {
 
 main {
   margin: 0 auto;
+  width: 86%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.mainwrap {
   padding: 25px;
+  background-color: #4d4d4d;
   font-size: 0.9em;
   line-height: 1.4em;
 }
@@ -147,6 +153,10 @@ nav {
   list-style-type: none;
 }
 
+nav a, nav a:link, nav a:visited, nav a:hover {
+  display: block;
+}
+
 nav img {
   padding-right: 15px;
   width: 50px;
@@ -160,6 +170,10 @@ footer {
   font-size: 0.7em;
   text-align: center;
 }
+
+
+
+
 
 
 
@@ -189,7 +203,7 @@ footer {
     background-position: 0 0, 40px 60px, -160px 310px, 10px 150px, 450px 150px, 80px -70px;
   }
 
-  .spaceshipwrap {
+  .spaceshipouterwrap {
     margin: 0 auto;
     width: 100%;
     position: absolute;
@@ -198,7 +212,7 @@ footer {
     pointer-events: none;
   }
 
-  .spaceshipwrap2 {
+  .spaceshipinnerwrap {
     margin: 0 auto;
     width: 75%;
     max-width: 800px;
@@ -206,7 +220,7 @@ footer {
   }
 
   .spaceship {
-    margin: 1.5em -50px 0 0;
+    margin: 2.3em -50px 0 0;
     width: 30%;
     max-width: 150px;
     display: inline;
@@ -255,12 +269,16 @@ footer {
 
   /* ~~~~ MAIN / NAVIGATION / FOOTER ~~~~ */
 
-  main, nav, footer {
+  nav, footer {
     width: 75%;
   }
 
   main {
     margin: 0 auto;
+    width: 75%;
+  }
+
+  .mainwrap {
     padding: 25px 100px 25px 25px;
     font-size: 1em;
     line-height: 1.4em;
@@ -282,3 +300,98 @@ footer {
 
 
 
+
+
+
+/* 800px */
+
+@media only screen and (min-width: 900px) {
+
+  /* ~~~~ SITE STYLES and LAYOUT ~~~~ */
+  
+  .astronaut {
+    margin: 0 5.5em 1em 0;
+    padding: 0;
+    width: 275px;
+    display: inline;
+  }
+
+  /* ~~~~ MAIN / NAVIGATION / FOOTER ~~~~ */
+
+  .socialouterwrap {
+    width: 100%;
+    position: absolute;
+    top: 143px;
+    left: 0;
+    z-index: 10;
+  }
+
+  .socialinnerwrap {
+    margin: 0 auto;
+    width: 75%;
+    max-width: 800px;
+  }
+
+  .social li {
+    display: inline-block;
+  }
+
+  .social li:first-child {
+    padding-left: 3px;
+  }
+
+  .social li:last-child {
+    display: none;
+  }
+
+  main {
+    margin-top: -200px;
+    width: 86%;
+  }
+
+  .mainwrap {
+    margin-right: 160px;
+    padding: 25px;
+    width: 200px;
+    float: right;
+    background-color: #ccc;
+    color: black;
+    font-size: 1em;
+  }
+
+  .intro {
+    text-align: right;
+    font-size: 0.95em;
+  }
+
+  nav {
+    margin: 13em auto 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .navlinks {
+    margin: 0em 0em 0;
+    padding: 25px;
+    width: 9em;
+    background-color: #4d4d4d;
+  }
+
+  .navlinks li {
+    padding: 0 0 1em;
+  }
+
+   .navlinks li:last-child {
+    padding-bottom: 0;
+  }
+
+/*  nav a, nav a:link, nav a:visited, nav a:hover {
+    display: inline-block;
+  }*/
+
+  footer {
+    margin-top: 75px;
+    padding: 0;
+    background-color: transparent;
+    text-align: left;
+  }
