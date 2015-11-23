@@ -1,0 +1,398 @@
+/* ~~~~ SITE STYLES and LAYOUT ~~~~ */
+
+html {
+  background-color: #1a1a1a;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 10px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 5px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 10px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 10px),
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 10px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 10px);
+  background-repeat: repeat, repeat, repeat, repeat, repeat, repeat;
+  background-attachment: fixed, fixed, fixed, fixed, fixed, fixed, fixed;
+  background-size: 550px 550px, 350px 350px, 470px 470px, 250px 250px, 450px 450px, 400px 400px; 
+  background-position: 0 0, 40px 60px, -160px 310px, 10px 150px, 450px 150px, 80px -70px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  line-height: 1.5rem; 
+}
+
+.spaceship {
+  display: none;
+}
+
+.spaceship2 {
+  margin: 0 auto;
+  width: 150px;
+}
+
+a, a:link, a:visited {
+  color: #79a6d2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b3cce5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.intro {
+  margin: 0;
+  display: inline;
+}
+
+.mars {
+  display: none;
+}
+
+.astronaut {
+  display: none;
+}
+
+
+
+/* ~~~~ HEADER ~~~~ */
+
+.headerwrap {
+  margin: 3em auto;
+  width: 86%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.smallhead, .bighead {
+  
+  color: #fff;
+}
+
+.smallhead {
+  margin: 1em 0 1.8em;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-shadow: 0 0 5px #1a1a1a;
+}
+
+.bighead {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-family: 'Orbitron', 'Arial Black', sans-serif;
+  font-size: 3.5em;
+  font-weight: 900;
+  line-height: 1.2em;
+  background: repeating-linear-gradient(#fff 0%, #fff 12%, #333 1.2em);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+/* ~~~~ MAIN / NAVIGATION / FOOTER ~~~~ */
+
+nav, footer {
+  width: 86%;
+  max-width: 800px;
+  background-color: #4d4d4d;
+  box-sizing: border-box;
+  
+}
+
+section {
+  margin: 0 auto;
+  width: 86%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.sectionwrap {
+  margin: 0;
+  padding: 0 25px 25px;
+  background-color: transparent;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+
+.social {
+  margin: 1.3em 0 0em;
+  padding: 0;
+  text-align: justify;
+  list-style-type: none;
+}
+
+.social li {
+  padding: 0 0.2em;
+  display: inline-block;
+}
+
+.social li:last-child {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.social li img {
+  width: 80%;
+}
+
+nav {
+  margin: 0 auto 1em;
+  padding: 15px 25px;
+  font-family: 'Orbitron', 'Arial Black', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  vertical-align: center;
+}
+
+.navlinks {
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks li {
+  margin: 0;
+  padding: 1em 0;
+  list-style-type: none;
+}
+
+nav a, nav a:link, nav a:visited, nav a:hover {
+  display: block;
+}
+
+nav img {
+  padding-right: 15px;
+  width: 50px;
+  vertical-align: middle;
+}
+
+footer {
+  margin: 0 auto 2.5rem;
+  padding: 25px;
+  color: #bbb;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+
+/* 500px */
+
+@media only screen and (min-width: 500px) {
+
+  /* ~~~~ SITE STYLES and LAYOUT ~~~~ */
+
+  .spaceshipouterwrap {
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .spaceshipinnerwrap {
+    margin: 0 auto;
+    width: 75%;
+    max-width: 800px;
+    text-align: right;
+  }
+
+  .spaceship {
+    margin: 2.3em -50px 0 0;
+    width: 30%;
+    max-width: 150px;
+    display: inline;
+  }
+
+  .spaceship2 {
+    display: none;
+  }
+
+  .mars {
+    display: inline;
+    width: 350px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: scaleX(-1);
+  }
+
+
+
+  /* ~~~~ HEADER ~~~~ */
+
+  .headerwrap {
+    margin-bottom: 2.2em;
+    width: 75%;
+    text-align: left;
+  }
+
+  .smallhead {
+    margin: 0 0 0.5em;
+  }
+
+  .bighead {
+    margin: 0 0 0.2em;
+    padding-right: 1.5em;
+  }
+
+
+
+
+  /* ~~~~ MAIN / NAVIGATION / FOOTER ~~~~ */
+
+  nav, footer {
+    width: 75%;
+  }
+
+  section {
+    width: 75%;
+  }
+
+  .sectionwrap {
+    padding: 0 0 25px;
+  }
+
+  main {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .mainwrap {
+    padding: 25px 100px 25px 25px;
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+
+  .social {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .social li {
+    padding: 0 0.7em 0 0;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* 800px */
+
+@media only screen and (min-width: 900px) {
+
+  /* ~~~~ SITE STYLES and LAYOUT ~~~~ */
+  
+  .astronaut {
+    margin: 0 5.5em 1em 0;
+    padding: 0;
+    width: 275px;
+    display: inline;
+  }
+
+  /* ~~~~ MAIN / NAVIGATION / FOOTER ~~~~ */
+
+  .socialouterwrap {
+    width: 100%;
+    position: absolute;
+    top: 143px;
+    left: 0;
+    z-index: 10;
+  }
+
+  .socialinnerwrap {
+    margin: 0 auto;
+    width: 75%;
+    max-width: 800px;
+  }
+
+  .social li {
+    display: inline-block;
+  }
+
+  .social li:first-child {
+    padding-left: 3px;
+  }
+
+  .social li:last-child {
+    display: none;
+  }
+
+  main {
+    margin-top: -200px;
+    width: 86%;
+  }
+
+  .mainwrap {
+    margin-right: 160px;
+    padding: 25px;
+    width: 200px;
+    float: right;
+    background-color: #ccc;
+    color: black;
+    font-size: 1em;
+  }
+
+  .intro {
+    text-align: right;
+    font-size: 0.95em;
+  }
+
+  nav {
+    margin: 13em auto 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .navlinks {
+    margin: 0em 0em 0;
+    padding: 25px;
+    width: 9em;
+    background-color: #4d4d4d;
+  }
+
+  .navlinks li {
+    padding: 0 0 1em;
+  }
+
+   .navlinks li:last-child {
+    padding-bottom: 0;
+  }
+
+/*  nav a, nav a:link, nav a:visited, nav a:hover {
+    display: inline-block;
+  }*/
+
+  footer {
+    margin-top: 75px;
+    padding: 0;
+    background-color: transparent;
+    text-align: left;
+  }
