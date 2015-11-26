@@ -284,7 +284,7 @@ footer {
 
 
 
-/* 800px */
+/* 900px */
 
 @media only screen and (min-width: 900px) {
 
@@ -319,10 +319,6 @@ footer {
 
   .social li:first-child {
     padding-left: 3px;
-  }
-
-  .social li:last-child {
-    display: none;
   }
 
   main {
