@@ -32,7 +32,7 @@ body {
   width: 150px;
 }
 
-a, a:active, a:link, a:visited {
+a, a:active, a:link, a:visited, a:hover {
   color: #79a6d2;
   font-weight: bold;
   text-decoration: none;
@@ -56,6 +56,20 @@ a:hover {
 .astronaut {
   display: none;
 }
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.2em;
+  color: #d37b4f;
+  font-family: 'Orbitron', 'Arial Black', sans-serif;
+  letter-spacing: 1px;
+}
+
 
 
 
@@ -87,7 +101,7 @@ a:hover {
 
 /* ~~~~ MAIN / NAVIGATION / FOOTER ~~~~ */
 
-nav, footer {
+nav, .content, footer {
   width: 86%;
   max-width: 800px;
   background-color: #4d4d4d;
@@ -97,7 +111,7 @@ nav, footer {
 
 nav {
   margin: 0 auto 1em;
-  padding: 15px 25px;
+  padding: 0px 0;
   font-family: 'Orbitron', 'Arial Black', sans-serif;
   font-size: 1.5em;
   letter-spacing: 2px;
@@ -105,19 +119,19 @@ nav {
 }
 
 .navtitle {
-  margin: 0.5em 0 0;
-  padding: 0 0 0.5em;
+  margin: 0;
+  padding: 25px;
+  color: white;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.5em;  
 }
 
-nav > a, nav > a:active, nav > a:link, nav > a:visited {
-  color: #fff;
-}
-
+nav > a, nav > a:active, 
+nav > a:link, 
+nav > a:visited, 
 nav > a:hover {
-  color: #ccc;
+  color: #fff;
 }
 
 .navicon {
@@ -140,13 +154,21 @@ nav > a:hover {
 
 .navlinks li {
   margin: 0;
-  padding: 1em 0;
+  padding: 25px;
   list-style-type: none;
 }
 
 .navlinks li:first-child {
-  padding-top: 1.5em;
+  padding-top: 1em;
   border-top: 1px solid #ccc;
+}
+
+.navlinks li.active {
+  background: #808080;
+}
+
+.navlinks li.active a {
+  color: #b3cce5;
 }
 
 #navmenu {
@@ -157,7 +179,7 @@ nav > a:hover {
   display: block;
 }
 
-.navlinks a, .navlinks a:link, .navlinks a:visited, .navlinks a:hover {
+.navlinks a {
   display: block;
 }
 
@@ -166,6 +188,31 @@ nav img {
   width: 50px;
   vertical-align: middle;
 }
+
+
+
+.content {
+  margin: 25px auto;
+  padding: 25px;
+}
+
+.imgwraptop {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.imgcred {
+  margin: -0.4em 0 0;
+  padding: 0;
+  color: #bbb;
+  font-size: 0.7em;
+}
+
+
 
 footer {
   margin: 0 auto 2.5rem;
@@ -189,6 +236,9 @@ footer {
 .social li img {
   width: 2.5em;
 }
+
+
+
 
 
 
@@ -249,7 +299,7 @@ footer {
   /* ~~~~ HEADER ~~~~ */
 
   .headerwrap {
-    margin-bottom: 2.2em;
+    margin-bottom: 1em;
     width: 75%;
     text-align: left;
   }
@@ -268,19 +318,27 @@ footer {
 
   /* ~~~~ MAIN / NAVIGATION / FOOTER ~~~~ */
 
-  nav, footer {
+  nav, .content, footer {
     width: 75%;
   }
 
-  main {
-    margin: 0 auto;
-    width: 75%;
+
+  .textwrap {
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    max-width: 80px;
+    height: 350px;
+    float: right;
+    background-color: #4d4d4d;
   }
 
-  .mainwrap {
-    padding: 25px 100px 25px 25px;
-    font-size: 1em;
-    line-height: 1.4em;
+
+
+  .imgwraptop {
+    margin: 0 25px 25px 0;
+    width: 80%;
+    max-width: 300px;
   }
 
 
@@ -300,12 +358,8 @@ footer {
 
   /* ~~~~ SITE STYLES and LAYOUT ~~~~ */
   
-  .astronaut {
-    margin: 0 5.5em 1em 0;
-    padding: 0;
-    width: 275px;
-    display: inline;
-  }
+
+
 
   /* ~~~~ MAIN / NAVIGATION / FOOTER ~~~~ */
 
@@ -331,30 +385,51 @@ footer {
 
 
   nav {
-    margin: 13em auto 0;
+    margin: 0em auto 0;
     padding: 0;
     background-color: transparent;
+    font-size: 1.2em;
   }
 
   .navlinks {
-    margin: 0em 0em 0;
-    padding: 25px;
-    width: 9em;
+    margin: 0;
+    padding: 0;
     background-color: #4d4d4d;
   }
 
   .navlinks li {
-    padding: 0 0 1em;
+    padding: 15px;
+    display: inline-block;
   }
 
-   .navlinks li:last-child {
-    padding-bottom: 0;
+  .navlinks li:first-child {
+    border: none;
+  }
+
+  nav a.mainnav {
+    display: none;
+  }
+
+  #navmenu {
+    display: block;
+  }
+
+  nav img {
+    padding-right: 10px;
+    width: 30px;
   }
 
 
-  footer {
-    margin-top: 75px;
-    padding: 0;
-    background-color: transparent;
-    text-align: left;
+
+  .imgwraptop {
+    margin: 0 25px 25px 25px;
+    width: 300px;
+    float: right;
   }
+
+
+
+
+
+
+
