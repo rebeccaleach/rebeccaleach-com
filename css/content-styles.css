@@ -25,11 +25,13 @@ body {
 
 .spaceship {
   display: none;
+  border: none;
 }
 
 .spaceship2 {
   margin: 0 auto;
   width: 150px;
+  border: none;
 }
 
 a, a:active, 
@@ -87,8 +89,10 @@ h1:first-of-type {
 
 
 img {
-  margin: 10px 0;
+  margin: 0 auto 25px;
   width: 100%;
+  display: block;
+  border: 1px solid #ccc;
 }
 
 
@@ -208,7 +212,9 @@ nav img {
   margin: 0;
   padding: 0 15px 0 0;
   width: 50px;
+  display: inline-block;
   vertical-align: middle;
+  border: none;
 }
 
 
@@ -226,13 +232,15 @@ nav img {
   width: 100%;
 }
 
-.image {
+.biophoto {
+  margin: 0;
+  padding: 0;
   width: 100%;
   border: 1px solid #ccc;
 }
 
 .imgcred {
-  margin: -0.4em 0 0;
+  margin: 0;
   padding: 0;
   color: #bbb;
   font-size: 0.7em;
@@ -273,6 +281,8 @@ footer {
   margin: 0;
   padding: 0;
   width: 30px;
+  display: inline-block;
+  border: none;
 }
 
 
@@ -323,6 +333,8 @@ footer {
   }
 
   .mars {
+    margin: 0;
+    padding: 0;
     display: inline;
     width: 350px;
     position: fixed;
@@ -330,7 +342,46 @@ footer {
     left: 0;
     z-index: -1;
     transform: scaleX(-1);
+    border: none;
   }
+
+
+
+  /* images */
+
+  /* size */
+
+  .imgsmall {
+    width: 40%;
+  }
+
+  .imgmed {
+    width: 60%;
+  }
+
+  .imglarge {
+    width: 85%;
+  }
+
+
+
+  /* alignment */
+
+  .imgleft {
+    margin: 5px 25px 25px 0;
+    float: left;
+  }
+
+  .imgright {
+    margin: 5px 0 25px 25px;
+    float: right;
+  }
+
+  .imgcov {
+    width: 83%;
+    float: left;
+  }
+
 
 
 
@@ -396,7 +447,10 @@ footer {
 
   /* ~~~~ SITE STYLES and LAYOUT ~~~~ */
   
-
+   .imgcov {
+    margin-right: 25px;
+      width: 83%;
+    }
 
 
   /* ~~~~ MAIN / NAVIGATION / FOOTER ~~~~ */
@@ -458,6 +512,12 @@ footer {
     display: inline-block;
     padding-right: 10px;
     width: 28px;
+  }
+
+
+
+  .textwrap {
+    margin-bottom: 100px;
   }
 
 
